@@ -12,6 +12,10 @@ public class Player : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	private Animator anim;
 
+	// Stats
+
+	int curHealth = 0;
+	int lives = 3;
 
 	void Start () {
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
@@ -22,24 +26,24 @@ public class Player : MonoBehaviour {
 	void Update() {
 
 		anim.SetBool ("Grounded", grounded);
-		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal1")));
 
-		if (Input.GetAxis ("Horizontal") < -0.1f) {
+		if (Input.GetAxis ("Horizontal1") < -0.1f) {
 			transform.localScale = new Vector3 (-1, 1, 1);
 		}
 
-		if (Input.GetAxis ("Horizontal") > 0.1f) {
+		if (Input.GetAxis ("Horizontal1") > 0.1f) {
 			transform.localScale = new Vector3 (1, 1, 1);
 		}
 
-		if (Input.GetButtonDown ("Jump")) {
+		if (Input.GetButtonDown ("Jump1")) {
 			rb2d.AddForce (Vector2.up * jumpPower);
 		}
 	}
 
 	void FixedUpdate () {
 
-		float h = Input.GetAxis ("Horizontal");
+		float h = Input.GetAxis ("Horizontal1");
 
 		rb2d.AddForce ((Vector2.right * speed) * h);
 
@@ -51,5 +55,12 @@ public class Player : MonoBehaviour {
 		if (rb2d.velocity.x < -maxSpeed) {
 			rb2d.velocity = new Vector2 (-maxSpeed, rb2d.velocity.y);
 		}
+	}
+
+	public void Die() {
+		rb2d.velocity = new Vector3 (0, 0, 0);
+		transform.position = new Vector3 (1, 1, 1);
+		curHealth = 0;
+		lives -= 1;
 	}
 }
