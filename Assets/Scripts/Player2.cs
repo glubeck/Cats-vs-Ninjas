@@ -28,11 +28,11 @@ public class Player2 : MonoBehaviour {
 		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal2")));
 
 		if (Input.GetAxis ("Horizontal2") < -0.1f) {
-			transform.localScale = new Vector3 (-1, 1, 1);
+			transform.localScale = new Vector3 ((float)1.45, (float)1.5, (float)1.0);
 		}
 
 		if (Input.GetAxis ("Horizontal2") > 0.1f) {
-			transform.localScale = new Vector3 (1, 1, 1);
+			transform.localScale = new Vector3 ((float)-1.45, (float)1.5, (float)1.0);
 		}
 
 		if (Input.GetButtonDown ("Jump2")) {

@@ -1,13 +1,17 @@
 fileFormatVersion: 2
-guid: d7c3cb94e92d0614a9654e39ad1200b1
-timeCreated: 1459017451
+guid: a1ce6fbd18000d442a0bf00b0a62d979
+timeCreated: 1459028023
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bases1_0
-    21300002: bases1_1
-    21300004: bases1_2
-    21300006: bases1_3
+    21300000: bases 2 black border_0
+    21300002: bases 2 black border_1
+    21300004: bases 2 black border_2
+    21300006: bases 2 black border_3
+    21300008: bases 2 black border_4
+    21300010: bases 2 black border_5
+    21300012: bases 2 black border_6
+    21300014: bases 2 black border_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -54,46 +58,90 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: bases1_0
+    - name: bases 2 black border_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 10
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bases1_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 15
-        width: 16
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bases1_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 10
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bases1_3
-      rect:
-        serializedVersion: 2
-        x: 104
+        x: 68
         y: 12
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 17
         width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 16
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 12
+        width: 17
         height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 12
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_6
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 10
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bases 2 black border_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 11
+        width: 16
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
