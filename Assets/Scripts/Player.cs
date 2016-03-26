@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 	public float maxSpeed = 3;
 	public float speed = 50f;
 	public float jumpPower = 200f;
+	public float health = 0f;
 
 	public bool grounded;
 
